@@ -5,6 +5,7 @@ import persistState from 'redux-localstorage'
 import thunk from 'redux-thunk'
 
 import user from './reducers/user'
+import instrument from './reducers/instrument'
 import userActions from './actions/user'
 
 const router = routerMiddleware(hashHistory)
@@ -16,6 +17,7 @@ const actionCreators = {
 
 const reducers = {
   user,
+  instrument,
   routing
 }
 

@@ -6,7 +6,12 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import routes from './routes'
 import configureStore from './store'
 
-const initialState = {}
+const initialState = {
+  instrument: {
+    frets: 22,
+    strings: 6
+  }
+}
 const store = configureStore(initialState)
 const routerHistory = syncHistoryWithStore(hashHistory, store)
 
