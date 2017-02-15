@@ -1,3 +1,9 @@
+export function openWindow () {
+  return {
+    type: 'OPEN_WINDOW'
+  }
+}
+
 export function setStrings (strings) {
   return {
     type: 'SET_STRINGS',

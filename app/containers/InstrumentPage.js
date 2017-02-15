@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Instrument from '../components/Instrument'
-import { setStrings, setFrets } from '../actions/instrument'
+import { openWindow, setStrings, setFrets } from '../actions/instrument'
 
 const mapStateToProps = (state) => {
   return state
@@ -8,6 +8,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    openWindow: () => {
+      dispatch(openWindow())
+    },
     setStrings: (strings) => {
       dispatch(setStrings(strings))
     },

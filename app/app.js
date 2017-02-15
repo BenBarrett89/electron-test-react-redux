@@ -8,7 +8,7 @@ import configureStore from './store'
 
 const initialState = {
   instrument: {
-    frets: 22,
+    frets: 24,
     strings: 6
   }
 }
